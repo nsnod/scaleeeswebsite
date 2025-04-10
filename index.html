@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.png" type="image/png" />
   <title>scaleees</title>
   <style>
     @font-face {
@@ -185,6 +186,28 @@
 
     .socials a:hover {
       text-decoration: underline;
+      color: rgb(214, 0, 110);
+      transition-duration: 0.3s;
+    }
+
+    .fixed-footer {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      padding: 12px 20px;
+      background: transparent;
+      z-index: 9999;
+    }
+
+    .fixed-footer a {
+      font-size: 14px;
+      color: white;
+      text-decoration: underline;
+    }
+
+    .fixed-footer a:hover {
+      color: rgb(99, 99, 255);
+      transition-duration: 0.3s;
     }
 
     @media (max-width: 600px) {
@@ -229,5 +252,10 @@
       <a href="https://www.tiktok.com/@scaleees" target="_blank">tiktok</a>
     </div>
   </div>
+
+  <div class="fixed-footer">
+    <a href="https://jenn.band" target="_blank">audioByjenN</a>
+  </div>
+
 </body>
 </html>
