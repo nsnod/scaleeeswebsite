@@ -49,6 +49,22 @@
       background-size: 100% auto;
     }
 
+    .video-embed {
+      width: min(90vw, 800px);   
+      aspect-ratio: 16 / 9;      
+      margin: 4vh auto;          
+      /* border: 2px solid white; */
+      /* box-shadow: 0 5px 5px rgba(0,0,0,.3); */
+      z-index: 2;
+    }
+
+    .video-embed iframe {
+      width: 100%;
+      height: 100%;
+      display: block;            
+      border: 0;
+    }
+
     /* @media (max-width: 1300px) {
       .fullscreen-bg {
         background-size: 50% auto;
@@ -84,6 +100,8 @@
       z-index: 1;
       font-family: 'IBMDOS', monospace;
     }
+
+    
 
     header {
       text-align: center;
@@ -236,12 +254,23 @@
     <h1>scaleees</h1>
   </header>
 
-  <div class="album-section">
+  <!-- <div class="album-section">
     <a href="https://ffm.to/shed?fbclid=PAZXh0bgNhZW0CMTEAAadFQZ4NKlM77R3l-5Ge9SBXIPa34tTofZKExkGmm7nj6BcLvvoTUZAFbzkj-A_aem_2MOOZkMDNpwPpDm4oEPVeg" target="_blank">
       <img src="shed.png" alt="Album Cover" class="album-cover" />
       <div>'shed' album</div>
     </a>
-  </div>
+  </div> -->
+
+   <div class="video-embed">
+      <iframe
+        src="https://www.youtube.com/embed/a7Kg36MZYwg"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        loading="lazy"></iframe>
+    </div>
 
   <div class="footer">
     <div class="socials">
